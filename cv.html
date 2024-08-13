@@ -4,137 +4,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio DK</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <Header>
-        <nav>
-<h1>
-    <a href="/index.html">Deborah Kinanga</a>
-</h1>
-<ul>
-    <li><a href="/cv.html">CV</a></li>
-    <li><a href="/projets.html">Projets</a></li>
-    <li><a href="/contact.html">Contact</a></li>
-</ul>
+    <Header class="header">
+        <nav class="header__navbar">
+<div class="menu">
+    <h1 class="menu__titre1">
+        <a href="/index.html">Deborah Kinanga</a>
+    </h1>
+    <ul class="menu__liste">
+        <li class="menu__liste__lien menu__liste__lien--is-active"><a class="menu__liste__a" href="/cv.html">CV</a></li>
+        <li class="menu__liste__lien"><a class="menu__liste__a" href="/projets.html">Projets</a></li>
+        <li class="menu__liste__lien"><a class="menu__liste__a" href="/contact.html">Contact</a></li>
+    </ul>
+</div>
         </nav>
-        <h1>
+        
+    </Header>
+    <main class="main">
+     <section class="contenu-cv">
+        <h1 class="contenu-cv__titre1">
             Curriculum vitae
         </h1>
-    </Header>
-    <main>
-     <section>
-     <h2>
+     <h2 class="contenu-cv__titre2">
         Expériences professionnelles
      </h2>  
-     <ul>
-        <li>
-            <h3>
-                Développeuse back-end PHP et NodeJS
-             </h3> 
-             <P class="période">Février 2018-Présent</P>
-             <p class="lieu">
+     <ul class="contenu-cv__liste">
+        
+        <li class="contenu-cv__liste__item--sans-puce">
+                <div class="boite-flex">
+                    <h3 class="boite-flex__titre">
+                        Développeuse back-end PHP et NodeJS
+                     </h3> 
+                     <P class="boite-flex__période">Février 2018-Présent</P>
+                </div>
+             <p class="contenu-cv__liste__lieu">
                 Sopra Steria - Paris
              </p>
-             <p>
+             <p class="contenu-cv__liste__détail">
                 Au sein d'une équipe constituée d'un chef de projet xeb, de développeurs, de Data Scientist et d'architectes DevOps, j4ai réalisé de nombreuses misions sur des projets clients dans le secteur de la défense:
              </p>
         </li>
-        <li>Développement d'API PHP sur les frameworks Symfony et Laravel</li>
-        <li>Intégration de requêtes SQL et ElasticSearch avancées</li>
-        <li>Ajout de nouveaux endpoints sur une API Express.js avec des enjeux de cyber-sécurité</li>
-        <li>Utilisation de services Amazon Web Services (AWS) sur NodeJS, pour déléguer le traitement de certaines tâches.</li>
+        <li class="contenu-cv__liste__item">Développement d'API PHP sur les frameworks Symfony et Laravel</li>
+        <li class="contenu-cv__liste__item">Intégration de requêtes SQL et ElasticSearch avancées</li>
+        <li class="contenu-cv__liste__item">Ajout de nouveaux endpoints sur une API Express.js avec des enjeux de cyber-sécurité</li>
+        <li class="contenu-cv__liste__item">Utilisation de services Amazon Web Services (AWS) sur NodeJS, pour déléguer le traitement de certaines tâches.</li>
      </ul>
     </section>
-    <section>
-       <ul>
-        <li>
-            <h3>
-                Développeuse back-end Python
-            </h3>
-            <p class="période">Juin 2018-Jan</p>
-            <p class="lieu">Thales-Grenoble</p>
-            <p>Au sein d'une équipe de 5 développeurs et cloud architects, j'ai développé certaines évolutions ainsi que des correctifs sur un projet interne développé en Python, destiné à la maintenance d'appareils aéronefs:</p>
+    <section class="contenu-cv">
+       <ul class="contenu-cv__liste">
+        <li class="contenu-cv__liste__item--sans-puce">
+            <div class="boite-flex">
+                <h3 class="boite-flex__titre">
+                    Développeuse back-end Python
+                </h3>
+                <p class="boite-flex__période">Juin 2018-Jan</p>
+            </div>
+            <p class="contenu-cv__liste__lieu">Thales-Grenoble</p>
+            <p class="contenu-cv__liste__détail">Au sein d'une équipe de 5 développeurs et cloud architects, j'ai développé certaines évolutions ainsi que des correctifs sur un projet interne développé en Python, destiné à la maintenance d'appareils aéronefs:</p>
            </li>
-           <li>Nouveaux endpoints sur une API GraphQL</li>
-           <li>Améliorations des performances de certaines fonctions de traitement en masse sur des documents NoSQL</li>
-           <li>Réalisation à temps et validation par les pairs de 96% des tâches qui m'ont été affectées durant les sprints.</li>
+           <li class="contenu-cv__liste__item">Nouveaux endpoints sur une API GraphQL</li>
+           <li class="contenu-cv__liste__item">Améliorations des performances de certaines fonctions de traitement en masse sur des documents NoSQL</li>
+           <li class="contenu-cv__liste__item">Réalisation à temps et validation par les pairs de 96% des tâches qui m'ont été affectées durant les sprints.</li>
        </ul>
     </section>
-    <section>
-        <ul>
-            <li>
-                <h3>
-                    Développeuse front-end ReactJS
-                </h3>
-                <P class="période">Janvier 2018-Mars 2018</P>
-                <P class="lieu">Shifted - Paris</P>
-                <p>
+    <section class="contenu-cv">
+        <ul class="contenu-cv__liste">
+            <li class="contenu-cv__liste__item--sans-puce">
+                <div class="boite-flex">
+                    <h3 class="boite-flex__titre">
+                        Développeuse front-end ReactJS
+                    </h3>
+                    <P class="boite-flex__période">Janvier 2018-Mars 2018</P>
+                </div>
+                <P class="contenu-cv__liste__lieu">Shifted - Paris</P>
+                <p class="contenu-cv__liste__détail">
                 Encadré par des ingénieurs et intégrateurs front-end ainsi que des développeurs JavaScript, j'ai occupé plusieurs missions d'amélioration sur l'interface utilisateur:
                 </p>
             </li>
-            <li>Mise en place de tests unitaires automatisés</li>
-            <li>Amélioration et optimisation de composants ReactJS en TypeScript</li>
-            <li>Mise à jour de librairies et correctifs de compatibilité</li>
+            <li class="contenu-cv__liste__item">Mise en place de tests unitaires automatisés</li>
+            <li class="contenu-cv__liste__item">Amélioration et optimisation de composants ReactJS en TypeScript</li>
+            <li class="contenu-cv__liste__item">Mise à jour de librairies et correctifs de compatibilité</li>
         </ul>
     </section>
     <hr>
-    <section>
-        <h2>
+    <section class="contenu-cv">
+        <h2 class="contenu-cv__titre2">
             Formation
         </h2>
-        <ul>
-            <li>
-                <h3>
-                    Diplôme d'ingénieur en informatique
-                </h3>
-                <p class="période">2016 à 2019</p>
-                <P class="lieu">EFREI - Paris</P>
-                <p>Programmation informatique, spécialisation Data Scientist</p>
-                <p>J'ai effectué 2 stages durant ma formation:</p>
+        <ul class="contenu-cv__liste">
+            <li class="contenu-cv__liste__item--sans-puce">
+                <div class="boite-flex">
+                    <h3 class="boite-flex__titre">
+                        Diplôme d'ingénieur en informatique
+                    </h3>
+                    <p class="boite-flex__période">2016 à 2019</p>
+                </div>
+                <P class="contenu-cv__liste__lieu">EFREI - Paris</P>
+                <p class="contenu-cv__liste__détail">Programmation informatique, spécialisation Data Scientist</p>
+                <p class="contenu-cv__liste__détail">J'ai effectué 2 stages durant ma formation:</p>
             </li>
-            <li>Développement de micro-services en NodeJS dans le secteur bancaire</li>
-            <li>Renfonte du "Data Model" d'une application de suivi de livraisons chez un spécialiste de la logistique e-commerce</li>
+            <li class="contenu-cv__liste__détail">Développement de micro-services en NodeJS dans le secteur bancaire</li>
+            <li class="contenu-cv__liste__détail">Renfonte du "Data Model" d'une application de suivi de livraisons chez un spécialiste de la logistique e-commerce</li>
            
         </ul>
     </section>
     <hr>
-    <section>
-        <h2>Compétences et expertise</h2>
-        <ul>
-            <li>Reverse engineering</li>
-            <li>Modélisation de données Bases de données relationnelles</li>
-            <li>Rédaction de cahiers des charges spécifications fonctionnelles et techniques</li>
-            <li>Travail collaboratif Construction de projets collabratifs via Git (branches, correctifs,review ...)</li>
+    <section class="contenu-cv">
+        <h2 class="contenu-cv__titre2">Compétences et expertise</h2>
+        <ul class="contenu-cv__liste">
+            <li class="contenu-cv__liste__item">Reverse engineering</li>
+            <li class="contenu-cv__liste__item">Modélisation de données Bases de données relationnelles</li>
+            <li class="contenu-cv__liste__item">Rédaction de cahiers des charges spécifications fonctionnelles et techniques</li>
+            <li class="contenu-cv__liste__item">Travail collaboratif Construction de projets collabratifs via Git (branches, correctifs,review ...)</li>
         </ul>
     </section>
     <hr>
-    <section>
-        <h2>Langues</h2>
-        <ul>
-            <li><span>Français</span>Natif</li>
-            <li><span>Anglais</span>Niveau C1, Vocabulaire technique, Stage de 6 mois au Royaume-Uni</li>
-            <li><span>Espagnol</span>Capacité à entretenir une discussion informelle à l'oral, Equivalent B1</li>
+    <section class="contenu-cv">
+        <h2 class="contenu-cv__titre2">Langues</h2>
+        <ul class="contenu-cv__liste">
+            <li class="contenu-cv__liste__item"> <span>Français</span> Natif</li>
+            <li class="contenu-cv__liste__item"> <span>Anglais</span> Niveau C1, Vocabulaire technique, Stage de 6 mois au Royaume-Uni</li>
+            <li class="contenu-cv__liste__item"> <span>Espagnol</span> Capacité à entretenir une discussion informelle à l'oral, Equivalent B1</li>
         </ul>
     </section>
     </main>
     <hr>
-    <footer>
-        <nav>
-            <p>
-                Téléphone
-            </p>
-            <a href="tel:+243815009866">+243815009866</a>
-            <P>
-                Email
-            </P>
-            <a href="mailt:skdebkinanga@gmail.com">skdebkinanga@gmail.com</a>
-            <P>
-                Suivez-moi
-            </P>
-            <a href="http://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="#" alt="logo instagram"></a>
-            <a href="http://https://fr.linkedin.com/" target="_blank" rel="noopener noreferrer"><img src="#" alt="logo linkedin"></a>
-            <a href="http://twitter.com/" target="_blank" rel="noopener noreferrer"><img src="#" alt="logo twitter"></a>
-            <p>&copy;2024 By Deborah Kinanga</p>
+    <footer class="footer">
+        <nav class="footer__navbar">
+            <section class="contact">
+                <div class="contact__phone">
+                    <h3>
+                        Téléphone
+                    </h3>
+                    <a href="tel:+243815009866">+243815009866</a>
+                </div>
+                  
+                <div class="contact__mail">
+                    <h3>
+                        Email
+                    </h3>
+                    <a href="mailto:skdebkinanga@gmail.com">skdebkinanga@gmail.com</a>
+                </div>
+                    
+                <div class="contact__social-media">
+                    <h3>
+                        Suivez-moi
+                    </h3>
+                    <div class="contact__social-media__lien">
+                        <a href="http://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img class="contact__logo" src="logo_instagram.png" alt="logo instagram"></a>
+                        <a href="http://https://fr.linkedin.com/" target="_blank" rel="noopener noreferrer"><img class="contact__logo" src="logo_linkdin.png" alt="logo linkedin"></a>
+                        <a href="http://twitter.com/" target="_blank" rel="noopener noreferrer"><img class="contact__logo" src="logo_twitter.png" alt="logo twitter"></a>
+                    </div>
+                </div>
+                    
+                    <div class="contact__auteur">
+                        <p class="contact__copyrigth">&copy;2024 By Deborah Kinanga</p>
+                    </div>
+            
+            </section>
         </nav>
     </footer>
 </body>

@@ -4,58 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio DK</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <Header class="header">
-        <nav class="header__nav">
-<div>
-    <h1 class="header__nav__h1">
+        <nav class="header__navbar">
+<div class="menu">
+    <h1 class="menu__titre1">
         Deborah Kinanga
     </h1>
-    <ul>
-        <li><a href="/cv.html">CV</a></li>
-        <li><a href="/projets.html">Projets</a></li>
-        <li><a href="/contact.html">Contact</a></li>
+    <ul class="menu__liste">
+        <li class="menu__liste__lien"><a class="menu__liste__a" href="/cv.html">CV</a></li>
+        <li class="menu__liste__lien"><a class="menu__liste__a" href="/projets.html">Projets</a></li>
+        <li class="menu__liste__lien"><a class="menu__liste__a" href="/contact.html">Contact</a></li>
     </ul>
 </div>
         </nav>
     </Header>
-    <main>
-        <div>
-            <img src="#" alt="ma photo">
-        <h1>
-            Hello
-        </h1>
-        <h2>
-            A propos de moi
-        </h2>
-        <p>
-            Je suis <span>Deborah Kinanga</span>, une développeuse web passionnée, dotée d'une créativité débordante et d'un talent pour concrétiser des idées en expériences numériques interactives.
-        </p>
-        <ul>
-            <li><a href="/cv.html">CV</a></li>
-            <li><a href="/projets.html">Projets</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-        </ul>
-        </div>
-    </main>
-    <footer>
-        <nav>
-            <p>
-                Téléphone
+    <main class="main">
+        
+        <section class="accueil">
+            <div class="accueil__portrait">
+                <img src="maphoto2.jpeg" alt="ma_photo" class="accueil__portrait--photo">
+            </div>
+    
+            <div class="contenu">    
+            <h1 class="contenu__titre1">
+                Hello
+            </h1>
+            <h2 class="contenu__titre2">
+                A propos de moi
+            </h2>
+            <p class="contenu__p">
+                Je suis <span>Deborah Kinanga</span>, une développeuse web passionnée, dotée d'une créativité débordante et d'un talent pour concrétiser des idées en expériences numériques interactives.
             </p>
-            <a href="tel:+243815009866">+243815009866</a>
-            <P>
-                Email
-            </P>
-            <a href="mailt:skdebkinanga@gmail.com">skdebkinanga@gmail.com</a>
-            <P>
-                Suivez-moi
-            </P>
-            <a href="http://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="#" alt="logo instagram"></a>
-            <a href="http://https://fr.linkedin.com/" target="_blank" rel="noopener noreferrer"><img src="#" alt="logo linkedin"></a>
-            <a href="http://twitter.com/" target="_blank" rel="noopener noreferrer"><img src="#" alt="logo twitter"></a>
-            <p>&copy;2024 By Deborah Kinanga</p>
+            <ul class="contenu__liste">
+                <li class="contenu__liste__lien--yellow-circle"><a href="/cv.html">CV</a></li>
+                <li class="contenu__liste__lien--red-circle"><a href="/projets.html">Projets</a></li>
+                <li class="contenu__liste__lien--cyan-circle"><a href="/contact.html">Contact</a></li>
+            </ul>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer class="footer">
+        <nav class="footer__navbar">
+            <section class="contact">
+                <div class="contact__phone">
+                    <h3>
+                        Téléphone
+                    </h3>
+                    <a href="tel:+243815009866">+243815009866</a>
+                </div>
+                  
+                <div class="contact__mail">
+                    <h3>
+                        Email
+                    </h3>
+                    <a href="mailto:skdebkinanga@gmail.com">skdebkinanga@gmail.com</a>
+                </div>
+                    
+                <div class="contact__social-media">
+                    <h3>
+                        Suivez-moi
+                    </h3>
+                    <div class="contact__social-media__lien">
+                        <a href="http://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img class="contact__logo" src="logo_instagram.png" alt="logo instagram"></a>
+                        <a href="http://https://fr.linkedin.com/" target="_blank" rel="noopener noreferrer"><img class="contact__logo" src="logo_linkdin.png" alt="logo linkedin"></a>
+                        <a href="http://twitter.com/" target="_blank" rel="noopener noreferrer"><img class="contact__logo" src="logo_twitter.png" alt="logo twitter"></a>
+                    </div>
+                </div>
+                    
+                    <div class="contact__auteur">
+                        <p class="contact__copyrigth">&copy;2024 By Deborah Kinanga</p>
+                    </div>
+            
+            </section>
         </nav>
     </footer>
 </body>
